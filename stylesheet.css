@@ -1,0 +1,521 @@
+footer{
+  height:120px;
+  clear:both;
+}
+
+#aboutContent{
+  position:relative;
+  top:15vh;
+  z-index:5;
+  margin: auto;
+  opacity: 0.8;
+  border: 3px solid #42f4e5;
+  width: 40%;
+  height: auto;
+  background: #eeeeee;
+  border-radius: 2%;
+  text-align: center;
+  font-size:26px;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+#artContent{
+  margin: auto;
+  text-align: center;
+  font-size:30px;
+  position:relative;
+  z-index: 5;
+  height:0px;
+}
+
+#programmingContent{
+  margin:auto;
+  position:absolute;
+  z-index:7;
+  width:100%;
+  top:15vh;
+}
+
+#programmingTab{
+  margin:auto;
+  text-align: center;
+}
+
+/************************art css*************************/
+.artThumbnail{
+  margin:auto;
+  text-align: center;
+}
+
+.innerHexagon{
+  overflow: hidden;
+  height: 100%;
+  transform: rotate(-60deg);
+}
+
+.innerHexagon2{
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  visibility: visible;
+  transform:rotate(-60deg);
+}
+
+.innerHexagon2.selected{
+  border: 5px solid #42f4e5;
+}
+
+.outerHexagon{
+  overflow: hidden;
+  visibility: hidden;
+  transform: rotate(180deg);
+  cursor: pointer;
+  height: 120px;
+  margin: 0 0 10px 0px;
+}
+
+.picture{
+  height:auto;
+  border: 5px solid #000;
+}
+
+.thumbnails{
+  transform:rotate(-90deg);
+  position: relative;
+  top: -225px;
+}
+
+#artDisplay{
+  position:relative;
+  top:-450px;
+  margin-bottom: 50px;
+}
+
+/*********************navbar css*************************/
+body{
+  background: url("data/images/backgroundWithStripe.png") no-repeat center center fixed;
+  background-size: cover;
+  z-index:-1;
+}
+
+.tab.activeTab{
+  background-image:url("data/images/navbarTabActive.png");
+}
+
+.routerLink{
+  font-family: 'Josefin Sans', sans-serif;
+  color: #000000;
+  font-size:36px;
+}
+
+.tab{
+  background-image: url("data/images/navbarTab.png");
+  background-repeat: no-repeat;
+  width:874px;
+  height:100px;
+  z-index:9;
+  position:fixed;
+  left:-1000px;
+  margin-top:90px;
+  cursor: pointer;
+}
+
+#about{
+  top:100px;
+}
+
+#about .routerLink{
+  position:absolute;
+  left:625px;
+  top:25px;
+}
+
+#about:hover{
+  left:-300px;
+}
+
+#art{
+  top:250px;
+}
+
+#art .routerLink{
+  position:absolute;
+  top:25px;
+  left:650px;
+}
+
+#art:hover{
+  left:-150px;
+}
+
+#code{
+  top:400px;
+}
+
+#code .routerLink{
+  position:absolute;
+  top:25px;
+  left:525px;
+}
+
+#code:hover{
+  left:0px;
+}
+
+#main{
+  user-select:none;
+  user-drag:none;
+}
+
+#navbar{
+  position:relative;
+}
+
+#navbar #beam{
+  background-repeat: repeat-y;
+  background-image: url("data/images/navbarBeam.png");
+  width:43px;
+  height:100%;
+  position:fixed;
+  left:-100px;
+  top:-1000px;
+  transform: skewX(10deg);
+  z-index:8;
+}
+
+#navGlyph{
+  position:fixed;
+  z-index:101;
+  top: 32px;
+  left:35px;
+  font-size:40px;
+  cursor:pointer;
+}
+
+#navbarButton{
+  position:fixed;
+  padding:10px;
+  width:110px;
+  height:100px;
+  outline:none;
+  z-index: 100;
+}
+
+#navbarButton:active{
+  padding:10px;
+  width:100px;
+  height:90px;
+  outline:none;
+}
+
+#navbarButton:hover + #tooltip{
+  visibility:visible;
+}
+
+#tooltip{
+  position:fixed;
+  z-index:101;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-family: 'Josefin Sans', sans-serif;
+  visibility:hidden;
+  font-size: 20px;
+  padding:3px;
+}
+
+/********************project thumbnail*******************/
+.projectThumbnail{
+  position:relative;
+  margin:auto;
+  width:50%;
+  border:3px solid #555555;
+  border-radius: 10px;
+  cursor:pointer;
+  margin-bottom:5px;
+  background:white;
+  padding:2px;
+}
+
+.projectThumbnail p{
+  font-size: 3vh;
+}
+
+.projectThumbnail img{
+  max-width:100%;
+  max-height:100%;
+}
+
+.projectThumbnail:hover{
+  border:3px solid #42f4e5;
+}
+
+#backToTabs{
+  position:fixed;
+  z-index:99;
+  background:#42f4e5;
+  font-size:25px;
+  display:inline-block;
+  cursor:pointer;
+  top:10px;
+  left:6px;
+  border:2px solid #42f4e5;
+  border-radius:3px;
+  text-align:center;
+  color:#fff;
+  display:none;
+}
+
+#gameIFrame{
+  border:none;
+  width:100%;
+  height:628px;
+}
+
+/*******************git program css**********************/
+.addComponentButton{
+  position:relative;
+  background:#42f4e5;
+  font-size:30px;
+  display:inline-block;
+  cursor:pointer;
+  top:4px;
+  border:2px solid #42f4e5;
+  border-radius:3px;
+  text-align:center;
+  color:#fff;
+}
+
+.addIcon{
+  color:#fff;
+  font-size: 30px;
+  display:inline-block;
+  padding:5px;
+  text-align:center;
+}
+
+.addCompareInstances{
+  margin:auto;
+  text-align: center;
+  display:inline-block;
+}
+
+.box{
+  display:flex;
+  margin:auto;
+  border: none;
+  width: 50%;
+  height:auto;
+  background: transparent;
+  border-radius: 2%;
+  position:relative;
+  border-bottom: solid #000;
+  justify-content:space-between;
+}
+
+.box:hover .deleteButton{
+  visibility: visible;
+}
+
+.boxWinner{
+  margin:auto;
+  margin-top: 20px;
+  border: 3px solid #165b28;
+  width: 633.19px;
+  height: 250px;
+  background: #2fc456;
+  border-radius: 2%;
+  text-align: center;
+}
+
+.compareButton{
+  width:auto;
+  height:50px;
+  border: 2px solid #22f7e6;
+  background: #22f7e6;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 27px;
+  position:relative;
+  top:50%;
+}
+
+.compareDiv{
+  margin: auto;
+  text-align: center;
+  padding:20px;
+  display:inline-block;
+}
+
+button[disabled], html input[disabled] {
+    cursor: default;
+    border: 2px solid #aaaaaa;
+    background: #aaaaaa;
+}
+
+.deleteButton{
+  position:relative;
+  background: transparent;
+  border:none;
+  color: #42f4e5;
+  font-size:20px;
+  visibility: hidden;
+}
+
+.displayCompareInstances{
+  position: relative;  
+  left: -8px;
+  top: 1px;
+  padding-left:25px;
+  padding-right: 25px;
+  padding-top:12px;
+  padding-bottom:12px;
+  border: 3px solid #bbbbbb;
+  background: #ffffff;
+  text-align: center;
+  color: #000000;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.extraPadding{
+  position:relative;
+  height:0px;
+}
+
+.gitComponent{
+  margin-top:25px;
+  margin-bottom:25px;
+}
+
+.infoBox{
+  text-align: center;
+  position: relative;
+  display:inline-block;
+}
+
+.nameDiv{
+  margin: auto;
+  text-align:center;
+  position:relative;
+  display: inline-block;
+  font-size:3vw;
+  top:17px;
+}
+
+.nums{
+  font-size:20px;
+}
+
+.numLabels{
+  margin: auto;
+  text-decoration: underline;
+  font-size:20px;
+}
+
+.programmingButtons{
+  text-align: center;
+}
+
+.search{
+  border: none;
+  border-bottom: solid #000;
+  padding: 5px;
+  height: 50px;
+  width: 40%;
+  outline: none;
+  font-size: 20px;
+  background:transparent;
+}
+
+.searchButton {
+  position: relative;  
+  left: -35px;
+  top: 3px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  color: #42f4e5;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.textWinner{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 35px;
+  position:relative;
+  width:50%;
+}
+
+.userName{
+  font-size: 3vw;
+}
+
+.userText{
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.winnerInfo{
+  font-size:20px;
+  display:none;
+}
+
+.winnerName{
+  width:65%;
+  float:left;
+  font-size: 20px;
+  margin-top:32px;
+  margin-bottom: 32px;
+}
+
+.winnerText{
+  font-size:35px;
+}
+
+.wrap{
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  position:relative;
+  left:41px;
+}
+
+.wrap:hover .deleteButton{
+  visibility:visible;
+  left: -40px;
+  top: 2px;
+}
+
+.forkDiv{
+  display:inline-block;
+  padding:10px;
+}
+
+.starDiv{
+  display:inline-block;
+  padding:10px;
+}
+
+.userImg{
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #42f4e5;
+  display: none;
+  position:relative;
+  top:1vh;
+}
+
+.watcherDiv{
+  display:inline-block;
+  padding:10px;
+}
